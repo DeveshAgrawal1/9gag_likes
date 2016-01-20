@@ -39,5 +39,5 @@ def getgiflikes(name):
 				text_file.write("\n")
 
 ch=raw_input('Enter the name of the user: ')
-getgiflikes('mirandared')
+getgiflikes(ch)
 getimagelikes(ch)
