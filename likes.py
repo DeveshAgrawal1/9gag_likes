@@ -14,6 +14,7 @@ def getimagelikes(name):
 		x= like.findAll('img')
 		link=str(x[0].get('src'))
 		imagelist.append(str(x[0].get('alt')))
+		urllib.urlretrieve(link,'image_'+name+"_"+str(count)+'.jpg')
 		count+=1
 	with open("Output_image.txt", "w+") as text_file:
 			for i,j in enumerate(imagelist):
